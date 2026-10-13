@@ -1,115 +1,165 @@
 # Fedora + MangoWC · Koru Fern
 
-Fedora 44 / MangoWC 0.18.0 的个人桌面配置快照。深绿灰底色、柔和黄色重点、蕨绿色辅助强调，主要界面使用直角和不透明背景。保留现有窗口动画和 Ghostty 光标着色器。
+**English** | [简体中文](README.zh-CN.md)
 
-**配色来源：WallyHao 的 [koru-nixos-dotfiles](https://github.com/WallyHao/koru-nixos-dotfiles)，原版 Koru Fern 色板。**
-参考提交：[b276a4a](https://github.com/WallyHao/koru-nixos-dotfiles/tree/b276a4a61197b7831fbbe2e44af418a3b19ae768)，色板定义见 [system/theme.nix](https://github.com/WallyHao/koru-nixos-dotfiles/blob/b276a4a61197b7831fbbe2e44af418a3b19ae768/system/theme.nix)。本仓库将其适配到 Fedora 与 MangoWC，配色并非本仓库原创；不需要 NixOS 或 Home Manager。
+A coordinated Koru Fern desktop for Fedora and MangoWC: green-charcoal backgrounds, soft yellow highlights, fern-green accents, and readable text. It covers the compositor, launcher, terminals, editor, file manager, notifications, lock screen, cursor, and Fcitx5 candidate panel.
+
+The palette comes from **WallyHao's [koru-nixos-dotfiles](https://github.com/WallyHao/koru-nixos-dotfiles)**. This repository adapts it to Fedora using native configuration files; NixOS and Home Manager are not required.
 
 ![Koru Fern palette](docs/palette.svg)
 
-| 颜色角色 | 色值 |
+| Role | Colors |
 | --- | --- |
-| 背景 / 浮起表面 | `#171E1A` / `#222D26` |
-| 主文字 / 次级文字 | `#D2DCD0` / `#A5B3A2` |
-| 黄色重点 / 蕨绿色强调 | `#E6D87A` / `#8FBF88` |
-| 边框 / 选区 | `#425347` / `#334936` |
+| Background / raised surface | `#171E1A` / `#222D26` |
+| Text / secondary text | `#D2DCD0` / `#A5B3A2` |
+| Yellow highlight / fern accent | `#E6D87A` / `#8FBF88` |
+| Border / selection | `#425347` / `#334936` |
 
-完整语义色与 16 色 ANSI 色板见 [system/theme.json](system/theme.json)。其他资源来源和许可见 [CREDITS.md](CREDITS.md)。
+The source palette is pinned to [Koru commit b276a4a](https://github.com/WallyHao/koru-nixos-dotfiles/blob/b276a4a61197b7831fbbe2e44af418a3b19ae768/system/theme.nix). Full semantic and ANSI colors are in [system/theme.json](system/theme.json); attribution and licenses are in [CREDITS.md](CREDITS.md).
 
-## 仓库结构
+## Components
 
-参照上游 Koru 的目录职责组织；配置内容采用 Fedora 原生格式。
+| Component | Repository path | Contents |
+| --- | --- | --- |
+| MangoWC | `home/mango/` | Compositor settings, bindings, window rules, display setup, and session scripts |
+| Bibata cursor | `assets/cursors/Bibata-Modern-Koru/` | Recolored cursors with original sizes, hotspots, animations, aliases, and license |
+| Rofi | `home/rofi/` | Launcher configuration and theme |
+| Ghostty | `home/ghostty/` | Terminal configuration, palette, and cursor animation shader |
+| Alacritty | `home/alacritty/` | Terminal configuration and palette |
+| Helix | `home/helix/` | Editor settings, language configuration, and syntax theme |
+| Yazi | `home/yazi/` | Interface theme, file icons, and syntax-preview palette |
+| Btop | `home/btop/` | Monitor settings and graph theme |
+| SwayNC | `home/swaync/` | Notification configuration, stylesheet, sounds, and scripts |
+| Swaylock | `home/swaylock/` | Lock-screen configuration and colors |
+| Fcitx5 | `home/fcitx5/`, `assets/fcitx5/koru-fern/` | Classic UI reference configuration and standalone candidate-panel theme |
+
+Main surfaces are opaque and square. Mango window animations and the Ghostty cursor shader remain enabled. Fonts, Rime schemas, dictionaries, learned input data, and legacy themes are not bundled.
+
+## Layout
+
+Directory roles follow upstream Koru, with Fedora-native files inside:
 
 ```text
-home/       应用配置与应用主题
-system/     统一 Koru Fern 色板（theme.json）
-assets/     Bibata 光标与 Fcitx5 独立主题资源
-hosts/      本机屏幕、字体和会话说明
-lib/        部署映射与导出文件校验清单
-scripts/    路径渲染、光标重着色工具
-licenses/   第三方许可
-docs/       色板预览与 Fcitx5 验证记录
+home/       Application configuration and themes
+system/     Shared Koru Fern palette
+assets/     Cursor and Fcitx5 theme resources
+hosts/      Reference display, font, and session settings
+lib/        Deployment mapping and exported-file checksums
+scripts/    Home-path rendering and cursor recoloring
+licenses/   Third-party licenses
+docs/       Palette preview and validation records
 ```
 
-## 收录范围
+## Before installing
 
-| 组件 | 配置位置 | 内容 |
+The reference environment is **Fedora 44, MangoWC 0.18.0, and Fcitx5 5.1.23 with Rime**. Review these assumptions before applying the configuration:
+
+| Setting | Reference value | Configuration |
 | --- | --- | --- |
-| MangoWC | `home/mango/` | 合成器、快捷键、窗口规则、屏幕、启动脚本及工具脚本 |
-| Bibata 光标 | `assets/cursors/Bibata-Modern-Koru/` | Koru 重着色、原始尺寸与热点、别名、上游 GPL 许可 |
-| Rofi | `home/rofi/` | 启动器及完整 Koru Fern 主题 |
-| Ghostty | `home/ghostty/` | 字体、窗口、Koru Fern 色板、现有光标着色器 |
-| Alacritty | `home/alacritty/` | 当前终端配置及 Koru Fern 色板 |
-| Helix | `home/helix/` | 编辑器、语言配置及 Koru Fern 语法主题 |
-| Yazi | `home/yazi/` | 界面主题、文件图标规则及预览语法色板 |
-| Btop | `home/btop/` | 当前配置及 Koru Fern 图表主题 |
-| SwayNC | `home/swaync/` | 通知面板、JSON、CSS、现有声音与脚本 |
-| Swaylock | `home/swaylock/` | 锁屏及 Koru Fern 配色 |
-| Fcitx5 | `home/fcitx5/conf/classicui.conf`、`assets/fcitx5/koru-fern/` | 当前 Classic UI 配置快照与独立候选框主题 |
+| Display | `eDP-1`, 3200×2000, 165 Hz, scale 2 | `home/mango/monitor.conf` |
+| Xft DPI | 192 | `home/mango/autostart.sh` |
+| Backlight device | `intel_backlight` | `home/mango/scripts/brightness.sh` |
+| Ghostty / Alacritty font | Jetbrains Maple Mono, 16 / 13 | Each terminal's configuration |
+| Rofi font | HarmonyOS Sans bold, 18 | `home/rofi/config.rasi` |
+| Fcitx5 reference font | HarmonyOS Sans, 12; menu 10 | `home/fcitx5/conf/classicui.conf` |
 
-Rime 的方案、词库、学习记录和用户数据库不上传。密钥、登录信息、应用运行状态、剪贴板记录、备份、旧主题及嵌套 Git 仓库不收录；本机现有文件和旧主题仍保留。
+Install the fonts separately or choose fonts available on your system. Terminal and launcher icons need suitable icon glyphs. Keep your own input-method font and DPI settings when applying only the Fcitx5 theme.
 
-## 硬件与现有行为
+Install the applications you intend to use. Session helpers include `xrdb`, `dconf`, `wl-clipboard`, `cliphist`, `flock`, `wlsunset`, `brightnessctl`, `wpctl`, `playerctl`, `grim`, `slurp`, `jq`, `wlr-randr`, and SoX's `play`. `satty`, `swayosd-server`, `sway-audio-idle-inhibit`, and `xfce-polkit` are optional; the startup script skips unavailable services. Review distribution-specific paths in the scripts.
 
-这是一套针对 **3200×2000、165 Hz、Mango Scale=2** 的配置，屏幕名称为 `eDP-1`，Xft DPI 为 192。移植到其他设备前检查 `monitor.conf` 和 `autostart.sh`，不要照搬 DPI 来修补外观。
+## Install selected components
 
-字体文件不随仓库分发：终端使用 `Jetbrains Maple Mono`（Ghostty 16 / Alacritty 13），Rofi 使用 `HarmonyOS Sans bold 18`，Fcitx5 使用 `HarmonyOS Sans 12`、菜单 10。需要自行安装相应字体及终端图标字形。
-
-常用快捷键：`Super+Space` 启动器，`Super+H/J/K/L` 聚焦，`Super+U/I` 工作区，`Super+R` 列宽预设，`Super+Shift+S` 截图，`Super+V` 剪贴板，`Super+Alt+L` 锁屏，`Super+Alt+R` 重载 Mango。完整绑定以 `bind.conf` 为准。
-
-启动脚本会复用现有 Fcitx5 等进程，Mango 服务采用会话锁避免重复启动；夜灯保留 4200K。配置所需工具包括 `rofi`、`swaync`、`swaylock`、`fcitx5`、`xrdb`、`dconf`、`wl-clipboard`、`cliphist`、`flock`、`wlsunset`、`brightnessctl`、`wpctl`、`playerctl`、`grim`、`slurp`、`jq`、`wlr-randr`、`sox`。`satty`、`swayosd-server`、`sway-audio-idle-inhibit`、`xfce-polkit` 按需安装，启动脚本会跳过未安装的可选服务。输入法继续使用既有 Fcitx5 + Rime。
-
-## 使用与恢复
-
-仓库用于保存和审阅配置，**不会自动修改当前桌面**。本机已使用这套配置，无需重新安装。移植时先备份原配置，再按组件挑选文件；不要把整个目录直接覆盖到另一个用户的 `~/.config`。
-
-少数原配置使用绝对路径，导出时统一替换为 `@HOME@`。先生成适合当前用户的副本：
+Clone the repository and review the settings and bindings:
 
 ```sh
-python3 scripts/render.py --output /tmp/koru-fern-ready
+git clone https://github.com/Atlantmois/fedora-mango-koru-fern-dotfiles.git
+cd fedora-mango-koru-fern-dotfiles
 ```
 
-脚本只写指定的新目录，将 `@HOME@` 替换为当前用户的家目录，并保留可执行权限和光标符号链接。不同目标用户可加 `--home /home/目标用户`。生成的 `.config/`、`.local/` 目录按组件复制即可；渲染前的模板不可直接启用。目录部署映射见 `lib/deployment.json`。
+Render home-directory placeholders into a new output directory:
 
-Mango 的光标通过其专用 Dconf profile 配置，保留 `cursor/dconf-profile`、`koru-cursor.db` 和 `dconf.d/` 一起使用。需要重建数据库时，在渲染后的 Mango 目录运行：
+```sh
+python3 scripts/render.py --output rendered
+```
+
+The output directory must not already exist. The script replaces `@HOME@` with your home directory and preserves executable permissions and relative symlinks. It only prepares files; it does not install or reload anything. Use `--home /home/target-user` to prepare files for another user.
+
+Back up the target configuration and copy only the components you want from `rendered/.config/` and `rendered/.local/`. For example, to apply the complete Alacritty configuration:
+
+```sh
+if [ -d ~/.config/alacritty ]; then
+    cp -a ~/.config/alacritty ~/.config/alacritty.backup-$(date +%Y%m%d-%H%M%S)
+fi
+mkdir -p ~/.config/alacritty
+cp -a rendered/.config/alacritty/. ~/.config/alacritty/
+```
+
+This also applies font and window settings. To use only the colors, copy the theme file and import it from your existing configuration instead. Reload or reopen the affected application.
+
+[lib/deployment.json](lib/deployment.json) lists every destination. Rofi and SwayNC deploy under `~/.config/mango/`, matching Mango's launch commands. For Mango, copy the rendered Mango directory with its Rofi and SwayNC subdirectories, and install the Bibata cursor under `~/.local/share/icons/`. Review startup commands before starting the session. Do not enable unrendered path templates or overwrite your entire `~/.config` tree.
+
+The Mango cursor uses a dedicated Dconf profile. Keep `cursor/dconf-profile`, `cursor/koru-cursor.db`, and `cursor/dconf.d/` together. After editing cursor settings, rebuild the database from the deployed Mango directory:
 
 ```sh
 dconf compile cursor/koru-cursor.db cursor/dconf.d
 ```
 
-回滚各应用时恢复自己的配置备份。仓库只包含 Koru Fern 资源，原有 Kanso Ink 等主题继续留在本机。
+### Fcitx5: apply the theme only
 
-### 仅应用 Fcitx5 主题
+This theme targets **Classic UI**. Confirm which UI your Fcitx5 session uses first; GNOME Kimpanel may draw its own candidate panel.
 
-Fcitx5 本机版本为 5.1.23，实际用户界面是 Classic UI。**不要整体覆盖 `classicui.conf`**：仓库中的文件仅作为现有状态参考，它包含本机字体、候选方向和 DPI 参数。将独立主题复制到用户主题目录，仅修改 `Theme`、`DarkTheme`：
+Keep your input method, Rime configuration, shortcuts, fonts, candidate direction, paging, preedit behavior, and DPI settings. `home/fcitx5/conf/classicui.conf` is a reference file, **not a replacement for your own configuration**.
+
+Copy the theme and back up the existing Classic UI configuration:
 
 ```sh
 mkdir -p ~/.local/share/fcitx5/themes
 cp -a assets/fcitx5/koru-fern ~/.local/share/fcitx5/themes/
-cp -a ~/.config/fcitx5/conf/classicui.conf ~/.config/fcitx5/conf/classicui.conf.before-koru-fern
-sed -i -E 's/^(Theme|DarkTheme)=.*/\1=koru-fern/' ~/.config/fcitx5/conf/classicui.conf
-gdbus call --session --dest org.fcitx.Fcitx5 --object-path /controller \
-  --method org.fcitx.Fcitx.Controller1.ReloadAddonConfig classicui
+if [ -f ~/.config/fcitx5/conf/classicui.conf ]; then
+    cp -a ~/.config/fcitx5/conf/classicui.conf \
+        ~/.config/fcitx5/conf/classicui.conf.backup-$(date +%Y%m%d-%H%M%S)
+fi
 ```
 
-以上切换命令适用于已经存在 `Theme`、`DarkTheme` 项的配置；缺少时手动添加这两项。候选框使用原生纯色绘制，只有两个 8×8 PNG 菜单图标，无 SVG、阴影或模糊。主题文件所有字段置于节内，以兼容 GTK 客户端解析器。
+In `~/.config/fcitx5/conf/classicui.conf`, set or add only these entries:
 
-本机保留 `PerScreenDPI=True`、Wayland DPI 默认值 0、分数缩放默认启用。当前版本没有有效的 `ScaleWithDPI` 配置项，主题使用隐式 `SupportedScale=1`。不改 Rime、字体、输入法快捷键、分页、预编辑行为或协议环境变量。
+```ini
+Theme=koru-fern
+DarkTheme=koru-fern
+```
 
-回滚到本机此前的候选主题：
+Reload Classic UI without restarting the input method:
 
 ```sh
-sed -i -E 's/^(Theme|DarkTheme)=.*/\1=mellow-graphite-obsidian-lite/' ~/.config/fcitx5/conf/classicui.conf
 gdbus call --session --dest org.fcitx.Fcitx5 --object-path /controller \
   --method org.fcitx.Fcitx.Controller1.ReloadAddonConfig classicui
 ```
 
-其他机器使用自己的原主题名，或恢复 `classicui.conf.before-koru-fern`。部分应用缓存主题，切换后需重新打开应用。
+The panel uses native solid fills with no shadow or blur; its only images are two 8×8 PNG menu icons. Some applications cache theme resources, so reopen them if a reload does not update the appearance. Check Chinese input, candidate selection, placement, and scaling in the applications you use.
 
-## GNOME 共存与已知限制
+## Restore a previous configuration
 
-Mango 光标 profile 由 Mango 会话指定，不修改 GNOME 的全局光标配置。Fcitx5 配置由两个会话共享，**Fcitx5 主题没有会话隔离**。GNOME Kimpanel 通常由 Shell 绘制候选框；Classic UI 回退或客户端绘制可能应用本主题。终端、编辑器等用户配置也按应用共享，不能假设它们只影响 Mango。
+Restore the affected application's configuration from your backup, then reload or reopen it. For Fcitx5, restore your saved `classicui.conf`, or set `Theme` and `DarkTheme` to your previous theme name and run the reload command above. Keep the previous theme's resources installed until you are satisfied with the new theme.
 
-本机 XWayland 光标路径仍可能把 24 px 光标放大，清晰度与原生 Wayland 存在差异，未宣称修复。Fcitx5 候选框已验证的输入和定位结果见 [docs/fcitx5-validation.md](docs/fcitx5-validation.md)；不是所有应用或长期运行的兼容性保证。
+## Key bindings
 
-导出整理包括个人路径模板化及尾随空白清理，并在仓库副本修正通知完成音脚本的文件引用（`complete.oga` → 已有的 `complete.ogg`）。这些整理未修改本机运行配置。
+| Binding | Action |
+| --- | --- |
+| `Super+Space` | Launcher |
+| `Super+H/J/K/L` | Window focus |
+| `Super+U/I` | Workspace switching |
+| `Super+R` | Column-width presets |
+| `Super+Shift+S` | Screenshot |
+| `Super+V` | Clipboard history |
+| `Super+Alt+L` | Lock screen |
+| `Super+Alt+R` | Reload Mango |
+
+See [home/mango/bind.conf](home/mango/bind.conf) for all bindings.
+
+## GNOME and compatibility
+
+The dedicated cursor profile is selected by the Mango session. Application configurations, including Fcitx5's user configuration, are shared across desktop sessions. **The Fcitx5 theme is not isolated from GNOME.** Classic UI fallback or client-rendered panels can use it in either session; GNOME Kimpanel may render its own panel.
+
+Fcitx5 was checked in native Wayland, GTK3, GTK4/Nautilus, Qt6, and GTK3/XWayland paths in the reference environment. Candidate selection, paging, placement, and rollback were tested. See [the validation record (Chinese)](docs/fcitx5-validation.md). These results do not establish compatibility with every application or long-term performance. GNOME login-session behavior was not tested.
+
+XWayland cursor scaling can still produce a softer cursor than native Wayland. Installing a theme does not resolve that rendering-path difference. Keep scaling and input-protocol settings appropriate to your system.
