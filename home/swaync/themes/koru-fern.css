@@ -1,0 +1,330 @@
+/* Koru Fern — notification appearance only, 2026-10-12.
+ * Retains the existing font rules, spacing and widget layout.
+ * JSON configuration, startup, scripts and notification behavior are unchanged.
+ * Empty layer-shell areas are unpainted; all visible panels are fully opaque.
+ */
+:root {
+  --cc-bg: #171E1A;
+  --noti-border-color: #425347;
+  --noti-bg: 23, 30, 26;
+  --noti-bg-alpha: 1;
+  --noti-bg-darker: #171E1A;
+  --noti-bg-hover: #425347;
+  --noti-bg-focus: #425347;
+  --noti-close-bg: #E6D87A;
+  --noti-close-bg-hover: #8FBF88;
+  --text-color: #D2DCD0;
+  --text-color-disabled: #8FBF88;
+  --bg-selected: #E6D87A;
+  --border: 1px solid #425347;
+  --border-radius: 0;
+  --notification-shadow: none;
+  --mpris-album-art-overlay: #171E1A;
+  --mpris-button-hover: #425347;
+  --mpris-album-art-shadow: none;
+}
+@define-color cc-bg #171E1A;
+@define-color noti-border-color #425347;
+@define-color noti-bg #171E1A;
+@define-color noti-bg-darker #171E1A;
+@define-color noti-bg-hover #425347;
+@define-color noti-bg-focus #425347;
+@define-color text-color #D2DCD0;
+@define-color text-color-disabled #8FBF88;
+@define-color bg-selected #E6D87A;
+
+* {
+    font-family: "HarmonyOS Sans";
+    font-weight: bold;
+	font-size: 20px;
+}
+
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+    opacity: 1;
+    background: @noti-bg-darker;
+}
+
+.notification-row {
+    outline: none;
+    margin: 5px;
+    padding: 0;
+}
+
+.notification {
+    background: @cc-bg;
+    border-radius: 0;
+    border: 1px solid #425347;
+    margin: 0;
+}
+
+.close-button {
+    background: #E6D87A;
+    color: @cc-bg;
+    text-shadow: none;
+    padding: 0;
+    border-radius: 0;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.close-button:hover {
+    box-shadow: none;
+    background: #E6D87A;
+    transition: all .15s ease-in-out;
+    border: none;
+}
+
+.notification-action {
+    color: #D2DCD0;
+    border: 1px solid #425347;
+    border-top: none;
+    border-radius: 0;
+    background: #171E1A;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+    color: #D2DCD0;
+    background: #171E1A;
+}
+
+.summary {
+	padding-top: 7px;
+    font-size: 20px;
+    color: #D2DCD0;
+}
+
+.time {
+    font-size: 11px;
+    color: #E6D87A;
+    margin-right: 24px;
+}
+
+.body {
+    font-size: 20px;
+    color: #D2DCD0;
+}
+
+.control-center {
+    background: @cc-bg;
+    border: 1px solid #425347;
+    border-radius: 0;
+}
+
+.control-center-list {
+    background: @cc-bg;
+}
+
+.control-center-list-placeholder {
+    opacity: 1;
+}
+
+.floating-notification {
+    background: transparent;
+}
+
+.widget-title {
+    color: #D2DCD0;
+    background: @noti-bg-darker;
+    padding: 5px 10px;
+    margin: 10px 10px 5px 10px;
+    font-size: 1.5rem;
+    border-radius: 0;
+}
+
+.widget-title>button {
+    font-size: 1rem;
+    color: @text-color;
+    text-shadow: none;
+    background: @noti-bg;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.widget-title>button:hover {
+    background: #E6D87A;
+    color: @cc-bg;
+}
+
+.widget-dnd {
+    background: @noti-bg-darker;
+    padding: 5px 10px;
+    margin: 5px 10px 10px 10px;
+    border-radius: 0;
+    font-size: large;
+    color: #D2DCD0;
+}
+
+.widget-dnd>switch {
+    border-radius: 0;
+    background: #425347;
+}
+
+.widget-dnd>switch:checked {
+    background: #E6D87A;
+    border: 1px solid #E6D87A;
+}
+
+.widget-dnd>switch slider {
+    background: @cc-bg;
+    border-radius: 0;
+}
+
+.widget-dnd>switch:checked slider {
+    background: @cc-bg;
+    border-radius: 0;
+}
+
+.widget-label {
+    margin: 10px 10px 5px 10px;
+}
+
+.widget-label>label {
+    font-size: 1rem;
+    color: @text-color;
+}
+
+.widget-mpris {
+    color: @text-color;
+    background: @noti-bg-darker;
+    padding: 5px 10px 0px 0px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 0;
+}
+
+.widget-mpris > box > button {
+    border-radius: 0;
+}
+
+.widget-mpris-player {
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+.widget-mpris-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.widget-mpris-subtitle {
+    font-size: 1.1rem;
+}
+
+.widget-buttons-grid {
+    font-size: x-large;
+    padding: 5px;
+    margin: 5px 10px 10px 10px;
+    border-radius: 0;
+    background: @noti-bg-darker;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button {
+    margin: 3px;
+    background: @cc-bg;
+    border-radius: 0;
+    color: @text-color;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+    background: #E6D87A;
+    color: @cc-bg;
+}
+
+.widget-menubar>box>.menu-button-bar>button {
+    border: none;
+    background: @cc-bg;
+}
+
+.topbar-buttons>button {
+    border: none;
+    background: @cc-bg;
+}
+
+/* Override GTK defaults without changing the existing font settings. */
+* {
+  border-radius: 0;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  filter: none;
+}
+.notification-row .notification-background .notification,
+.notification-row .notification-background .notification .notification-default-action,
+.notification-row .notification-background .notification .notification-content,
+.notification-row .notification-background .notification .notification-alt-actions,
+.notification-row .notification-background .notification .notification-action > button,
+.notification-row .notification-background .notification .inline-reply-entry,
+.notification-row .notification-background .notification .inline-reply-button {
+  background: #171E1A;
+  color: #D2DCD0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.notification-row .notification-background .notification {
+  border: 1px solid #425347;
+}
+.notification-row .notification-background .notification.critical {
+  border-color: #E6D87A;
+}
+.notification-row .notification-background .notification .notification-default-action:hover,
+.notification-row .notification-background .notification .notification-action > button:hover,
+.notification-row .notification-background .notification .inline-reply-button:hover {
+  background: #425347;
+  color: #D2DCD0;
+}
+.notification-row .notification-background .notification .app-icon {
+  -gtk-icon-shadow: none;
+}
+.notification-row .notification-background .notification .image,
+.notification-row .notification-background .notification .body-image {
+  border-radius: 0;
+  background-color: #171E1A;
+}
+.notification-row .notification-background .notification .time {
+  color: #8FBF88;
+}
+.notification-row .notification-background .close-button {
+  background: #E6D87A;
+  color: #171E1A;
+  border-radius: 0;
+  box-shadow: none;
+}
+.notification-row .notification-background .close-button:hover {
+  background: #8FBF88;
+}
+.control-center .control-center-list .notification,
+.widget-mpris .widget-mpris-player,
+.widget-mpris .widget-mpris-player .widget-mpris-album-art {
+  border-radius: 0;
+  box-shadow: none;
+}
+.widget-mpris .widget-mpris-player .mpris-background {
+  filter: none;
+}
+.widget-mpris .widget-mpris-player .mpris-overlay {
+  background: #171E1A;
+}
+.notification-group.collapsed.not-expanded,
+.control-center .control-center-list-placeholder {
+  opacity: 1;
+}
+progressbar trough,
+scale trough {
+  background: #425347;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+progressbar progress,
+scale highlight {
+  background: #8FBF88;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.widget-dnd > switch:checked {
+  background: #8FBF88;
+  border-color: #8FBF88;
+}

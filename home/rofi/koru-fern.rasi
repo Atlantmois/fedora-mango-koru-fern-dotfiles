@@ -1,0 +1,114 @@
+/* Native Wayland scale 2 handles HiDPI; retain the existing logical sizes.
+ * @theme resets the built-in theme so unused default colors cannot leak in.
+ */
+@import "koru-fern-colors.rasi"
+
+* {
+    background-color: @bg;
+    text-color: @fg;
+    border-radius: 0px;
+    spacing: 2px;
+    highlight: bold;
+}
+
+window {
+    width: 750px;
+    height: 500px;
+    background-color: @bg;
+    border: 2px solid;
+    padding: 12px;
+}
+
+mainbox {
+    spacing: 10px;
+    margin: 0;
+    padding: 8px;
+    border: 0px;
+    children: ["inputbar", "listview", "message"];
+}
+
+inputbar {
+    children: ["prompt", "entry"];
+    spacing: 10px;
+    padding: 1px;
+}
+
+prompt {
+    text-color: @accent;
+    spacing: 0;
+}
+
+entry {
+    placeholder: "";
+    placeholder-color: @muted;
+    text-color: @fg;
+    spacing: 0;
+    cursor: text;
+}
+
+listview {
+    columns: 1;
+    lines: 7;
+    fixed-height: true;
+    fixed-columns: true;
+    cycle: false;
+    scrollbar: false;
+    border: 0px;
+    padding: 2px 0px 0px;
+    spacing: 2px;
+}
+
+element {
+    spacing: 10px;
+    margin: 0;
+    padding: 8px;
+    border: 0px;
+    cursor: pointer;
+    background-color: @bg;
+    text-color: @fg;
+}
+
+element normal.active, element alternate.active {
+    text-color: @accent;
+}
+
+element normal.urgent, element alternate.urgent {
+    text-color: @accent-yellow;
+}
+
+element selected.normal, element selected.active, element selected.urgent {
+    background-color: @accent-bg;
+    text-color: @fg;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    cursor: inherit;
+}
+
+element-text {
+    highlight: inherit;
+}
+
+element-icon {
+    size: 1em;
+}
+
+message {
+    background-color: @bg-alt;
+    border: 0px;
+    padding: 1px;
+}
+
+textbox {
+    background-color: inherit;
+    text-color: @fg;
+}
+
+overlay {
+    background-color: @bg-alt;
+    text-color: @muted;
+    margin: 0px 0.2em;
+    padding: 0px 0.2em;
+}

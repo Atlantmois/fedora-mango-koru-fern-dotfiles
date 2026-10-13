@@ -1,0 +1,14 @@
+{
+  "home/rofi": ".config/mango/rofi",
+  "home/swaync": ".config/mango/swaync",
+  "home/mango": ".config/mango",
+  "home/ghostty": ".config/ghostty",
+  "home/alacritty": ".config/alacritty",
+  "home/helix": ".config/helix",
+  "home/yazi": ".config/yazi",
+  "home/btop": ".config/btop",
+  "home/swaylock": ".config/swaylock",
+  "home/fcitx5": ".config/fcitx5",
+  "assets/fcitx5/koru-fern": ".local/share/fcitx5/themes/koru-fern",
+  "assets/cursors/Bibata-Modern-Koru": ".local/share/icons/Bibata-Modern-Koru"
+}

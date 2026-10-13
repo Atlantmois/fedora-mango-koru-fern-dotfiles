@@ -1,0 +1,611 @@
+{
+  "home/alacritty/alacritty.toml": {
+    "sha256": "cc745a68fb9d755eab54807779e83758d6af61f939d5ad76cc069120ae17004f"
+  },
+  "home/alacritty/themes/koru-fern.toml": {
+    "sha256": "0851459fbb6c10fde55437381baed8eff4b1ed18161920e2174123db1948bc77"
+  },
+  "home/btop/btop.conf": {
+    "sha256": "2e0835202952c279543668029e19dfcf3ace4a66df8324dc8ef1b3d2993a1430"
+  },
+  "home/btop/themes/koru-fern.theme": {
+    "sha256": "b832e25cac50c76687c479e4d88be2c4d81f3f6ca7d07671a1d5816609651325"
+  },
+  "home/fcitx5/conf/classicui.conf": {
+    "sha256": "4b3142a4840a9f17c42412305c6bc47a8b67a124727ce3a1392ce6b9573294a5"
+  },
+  "home/ghostty/config.ghostty": {
+    "sha256": "e9b4fd1bea1b791c6a7b0eb7a9ff53f459c8062e9d5d1fd9269330934952e10e"
+  },
+  "home/ghostty/shaders/cursor_warp.glsl": {
+    "sha256": "260180e4f14dc6ee32a693a34cc325c73d87281f35a57e538029e2445e4c049c"
+  },
+  "home/ghostty/themes/Koru Fern": {
+    "sha256": "fa120b54257b803841f3f5d3236aeffa74b213f291db8da087cc29a35cd31169"
+  },
+  "home/helix/config.toml": {
+    "sha256": "4b5dc95ee16a9d408295842b5632bd8bd8ace72645fa9da176607339863aaf25"
+  },
+  "home/helix/languages.toml": {
+    "sha256": "d492e498721c13b5d147c072f43fb39a4e99ceb56f6de98b62b9951adc5ffbbd"
+  },
+  "home/helix/themes/koru-fern.toml": {
+    "sha256": "35d78050853e7419b9f7b9afe74a3647d29237f05cab8ac52f9544e9b495c3c7"
+  },
+  "home/mango/autostart.sh": {
+    "sha256": "c3ba1a73c21de6abfcfaad7a9d29779b4479c50afe46b6ccd007fba97dce599c"
+  },
+  "home/mango/bind.conf": {
+    "sha256": "751cd5308852a18ff73c9dd79960843efe3972dab78a160ca6c98435bce02fca"
+  },
+  "home/mango/config.conf": {
+    "sha256": "e275b597c1853c597babee56ba23059523e17ba3d6218545696fd460cf55fec6"
+  },
+  "home/mango/cursor/dconf-profile": {
+    "sha256": "be6700b097e2a375be6237d01df799fa05de252b4bfbe1c1baff3728161248e3"
+  },
+  "home/mango/cursor/dconf.d/00-cursor": {
+    "sha256": "a97b0857866988f446e682272669c5eff9cbb64f2ae5617ccea66c4b3b26164c"
+  },
+  "home/mango/cursor/dconf.d/locks/cursor": {
+    "sha256": "3a9446a6586ae3e84a621e51c31c70a10f216bbc793d40d11b612594aa59b9b0"
+  },
+  "home/mango/cursor/default-profile": {
+    "sha256": "c2ddf38d99fa5b11903ee8cdd99bb1159daf25143743a786d693fcdde3448f6b"
+  },
+  "home/mango/cursor/koru-cursor.db": {
+    "sha256": "a7de77a5c990fde1065eab30ac1595bdcc235c88de913af736afff5f82c7a497"
+  },
+  "home/mango/cursor/sync-xwayland.sh": {
+    "sha256": "71bbbc243cd2bbcead9b0faca50003b8e8ce774c1a4b46484eba945f824c153e"
+  },
+  "home/mango/env.conf": {
+    "sha256": "8cd1a6ca75c87143eafd3cbb737ae45b6ca7c021c557b35143c884b799c6772d"
+  },
+  "home/mango/monitor.conf": {
+    "sha256": "eaf11e3f253c47df56b074735f54209aad6bb4d5778dc012d6a232b4391daa91"
+  },
+  "home/rofi/config.rasi": {
+    "sha256": "bf699cf17a9989cde09db039139cbb9d17c3f86a5770f0f455357d3b40d633c6"
+  },
+  "home/rofi/koru-fern-colors.rasi": {
+    "sha256": "6b8589afad279a401cec8295dfc3903107cbd95341e4f54e5f42794229a9108d"
+  },
+  "home/rofi/koru-fern.rasi": {
+    "sha256": "d7dc0b75a52caeab50953f7f829c754a94250381a822799fbaaec34a36763938"
+  },
+  "home/mango/rule.conf": {
+    "sha256": "d1f663969b7d5fc46285442e99797d29c25513574254936a53d94e3f4cc06753"
+  },
+  "home/mango/scripts/brightness.sh": {
+    "sha256": "1014196bb290050a2d175770c8a0d91b35842c41bd5a21df64abd8bc6b817d99"
+  },
+  "home/mango/scripts/clipboard.sh": {
+    "sha256": "1745e32e7364e3b6b202ed3c7f9812647fa48f31129960e2c1a64381eaec7167"
+  },
+  "home/mango/scripts/monitor.sh": {
+    "sha256": "2c33e49cd0cee9834426be9459ec8943e39c704538febfd102b36aff7dfd3db7"
+  },
+  "home/mango/scripts/run-app.sh": {
+    "sha256": "415938fee95e20cfaa6f9c75818f1786cef74c7fb2e7604076d69b4d5724e38a"
+  },
+  "home/mango/scripts/screenshot.sh": {
+    "sha256": "136399aa03f880350834562c0466b2007be3cc29d012542298eff2cdb2e213d6"
+  },
+  "home/mango/scripts/volume.sh": {
+    "sha256": "162eafadaf65b425ab671faed383d50fbc7ee8eb2a3d04c62e80482221be72a4"
+  },
+  "home/swaync/config.json": {
+    "sha256": "05ba96080633bca83d1381cd81cc107c728759926558fc843620a20c72ff15c1"
+  },
+  "home/swaync/sound/complete.ogg": {
+    "sha256": "2ceb9781edc071896f9678f3e8137b2a15faab9854219059585a5540c001b1c0"
+  },
+  "home/swaync/sound/critical.oga": {
+    "sha256": "695bdd582de2a0aa319a43b3a563f4cd034b4655ab4c83e4444fa1804fa3db3e"
+  },
+  "home/swaync/sound/message.ogg": {
+    "sha256": "2dab4a02bad0a564f4041db0dc14c0fbf5e1b2d3c34af50ac99dca7f3f46d47d"
+  },
+  "home/swaync/sound/normal.oga": {
+    "sha256": "baad7ca627aa282c5ed74c32e6a9d6ad2e6c4fd3c75d7ae409d3699783278731"
+  },
+  "home/swaync/sound/popup.ogg": {
+    "sha256": "0a0ca51f097b00d040b0d7ca9bd01c8d6d692e5dc968f9fcaae284d422f5fa97"
+  },
+  "home/swaync/sound/sound-complete.sh": {
+    "sha256": "8062ad886c397bc039475cecc8a8f51bcc4aa94677b668f043f55bb732068835"
+  },
+  "home/swaync/sound/sound-critical.sh": {
+    "sha256": "4ecdf5df6a89ecad34f17913727ecbc216dbe3bf9b10c8b83447737f8ee13bb9"
+  },
+  "home/swaync/sound/sound-message.sh": {
+    "sha256": "b76bb4cc9bf036c6103873734b556b85b3fc3bc263f1e3cb26927f16716ac09a"
+  },
+  "home/swaync/sound/sound-normal.sh": {
+    "sha256": "48b7b409a4b6f7a0f75b4964e0c884703478255c5dad76c246ddc4704b27cd7a"
+  },
+  "home/swaync/sound/sound-popup.sh": {
+    "sha256": "0b89e5446da67aee09edc1e281ef2345c635f9f22832c59128d06fe32aeeb0df"
+  },
+  "home/swaync/style.css": {
+    "symlink": "themes/koru-fern.css"
+  },
+  "home/swaync/themes/koru-fern.css": {
+    "sha256": "ba617090367bdade7e237246dc7a1e88ff8a3b72dca3a5371b5108bfaf8a2f4c"
+  },
+  "home/mango/tag.conf": {
+    "sha256": "361be61f9e6f78d54878e4155788cb6b5a4ff18fc507f31e755d923a8129fa19"
+  },
+  "home/swaylock/config": {
+    "symlink": "themes/koru-fern.conf"
+  },
+  "home/swaylock/themes/koru-fern.conf": {
+    "sha256": "1949cbc53107ae7545ddc2ebea3a68a5428816a653d36d80adaa82c1a63df145"
+  },
+  "home/yazi/theme.toml": {
+    "sha256": "0f18182ef1f26d187988c5df972d78ddd61f1e5310ef656d3a40ff2870aef5ea"
+  },
+  "home/yazi/themes/koru-fern.tmTheme": {
+    "sha256": "7afb8f4fb06b0b268042db1ae25b85449ce91c198e05525840a32e46952952e1"
+  },
+  "home/yazi/themes/koru-fern.toml": {
+    "sha256": "0f18182ef1f26d187988c5df972d78ddd61f1e5310ef656d3a40ff2870aef5ea"
+  },
+  "assets/fcitx5/koru-fern/arrow.png": {
+    "sha256": "8371a73681a92c898286d5407b0c824aeddc0962fa0ca4bfaa64bf77e0eb6b2b"
+  },
+  "assets/fcitx5/koru-fern/check.png": {
+    "sha256": "e146e3e857ff13daf159c7ebc9ca396a7b0deea3292ef62ea3d48bec339eeafd"
+  },
+  "assets/fcitx5/koru-fern/theme.conf": {
+    "sha256": "71dd16e2e8e30a8d0dbc28bdf0414efeb51c151804f80220218f49d887ec2924"
+  },
+  "assets/cursors/Bibata-Modern-Koru/LICENSE": {
+    "sha256": "fe92c7ac268ce17193b98298336d3793a843a94eba9efc7ad112f9f48ad9b214"
+  },
+  "assets/cursors/Bibata-Modern-Koru/README.md": {
+    "sha256": "2a2414ff7ae454c2f22cfeca5972c884cf18c59c6d322311459e04fddea514d4"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursor.theme": {
+    "sha256": "a2b03fa45e609f57f0ca6a066ac5e20f9c32ea398cff70caa94634186bd9c19f"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/00000000000000020006000e7e9ffc3f": {
+    "symlink": "left_ptr_watch"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/00008160000006810000408080010102": {
+    "symlink": "sb_v_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/028006030e0e7ebffc7f7070c0600140": {
+    "symlink": "sb_h_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/03b6e0fcb3499374a867c041f52298f0": {
+    "symlink": "crossed_circle"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/08e8e1c95fe2fc01f976f1e063a24ccd": {
+    "symlink": "left_ptr_watch"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/1081e37283d90000800003c07f3ef6bf": {
+    "symlink": "copy"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/14fef782d02440884392942c1120523": {
+    "symlink": "sb_h_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/2870a09082c103050810ffdffffe0204": {
+    "symlink": "sb_v_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/3085a0e285430894940527032f8b26df": {
+    "symlink": "link"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/3ecb610c1bf2410f44200f48c40d3599": {
+    "symlink": "left_ptr_watch"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/4498f0e0c1937ffe01fd06f973665830": {
+    "symlink": "move"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/5c6cd98b3f3ebcb1f9c7f1c204630408": {
+    "symlink": "question_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/6407b0e94181790501fd1e167b474872": {
+    "symlink": "copy"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/640fb0e74195791501fd1ed57b41487f": {
+    "symlink": "link"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/9081237383d90e509aa00f00170e968f": {
+    "symlink": "move"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/9d800788f1b08800ae810202380a0822": {
+    "symlink": "hand2"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/X_cursor": {
+    "sha256": "2340ba094f89c8e157fa816f304b9e4d87bb5994140bd924b9559cf8b612cbe0"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/a2a266d0498c3104214a47bd64ab0fc8": {
+    "symlink": "link"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/alias": {
+    "symlink": "dnd-link"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/all-scroll": {
+    "symlink": "move"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/arrow": {
+    "symlink": "left_ptr"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/b66166c04f8c3109214a4fbd64a50fc8": {
+    "symlink": "copy"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/bd_double_arrow": {
+    "sha256": "382b593fc7cd886135ee12e8107e4a47cca1d85df68d9c6d3b6361beebb4498f"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/bottom_left_corner": {
+    "sha256": "b5f3464959f7fbde45006bec68ba5759a8fe36bb83e19fe089004e6e74870928"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/bottom_right_corner": {
+    "sha256": "6c73ad861c6bbc8b6a0aed87749f40f43dd6f226fc01849a1a41da9901276857"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/bottom_side": {
+    "sha256": "337380d78587a2f6f421de620fde5fadc9aeb68f190714258b87c8a9facf13e8"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/bottom_tee": {
+    "sha256": "9c85b0aee8a4574cec40f79b9820a84dff51a01d8d51f776cf719fe0baae3c7b"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/c7088f0f3e6c8088236ef8e1e3e70000": {
+    "symlink": "bd_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/cell": {
+    "symlink": "plus"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/center_ptr": {
+    "sha256": "21dc927fd2fd254d07aac411d568cd9780c498e9344e00aa264286b60b71c697"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/circle": {
+    "sha256": "b1453e09b2809025155d9534427dfea23a406641286414f39cd463e129c9af0b"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/closedhand": {
+    "symlink": "grabbing"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/col-resize": {
+    "symlink": "sb_h_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/color-picker": {
+    "symlink": "tcross"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/context-menu": {
+    "sha256": "0461b1c0a2c9306856a1e8dd8d5df8e2ac13629ad6f6dae2fbcf9189942e7b60"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/copy": {
+    "sha256": "1025577b297f9ac49d3c0c8b8f6b1a3c264312ba9f9fda4564f0211fc06ef995"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/cross": {
+    "sha256": "74b85569e364298d8139645c3117f46219c9ec75ff33fbda7d81f01c6cf9792c"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/cross_reverse": {
+    "symlink": "cross"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/crossed_circle": {
+    "sha256": "8e4b44913b1f67b57258808d728f3af1a9f42a5d93892a8b601fa3a196e04c17"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/crosshair": {
+    "sha256": "7aaf64972e1c53c7a5f7eb4731ea136e35fbbd7d25683b2c0ad91e7638118a5c"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/d9ce0ab605698f320427677b458ad60b": {
+    "symlink": "question_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/default": {
+    "symlink": "left_ptr"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/diamond_cross": {
+    "symlink": "cross"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/dnd-ask": {
+    "sha256": "3e7839b35d1ac165fbb51c9cbcf99d8577445dd1c3beb8a8b857a41ccd6699b5"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/dnd-copy": {
+    "sha256": "dcf4bf935ac7e63a4525df5bcedd235eef419dd914243a7b6e0f95a7d2bccc44"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/dnd-link": {
+    "sha256": "7de5cb8e95242bb479c1de8bee93e3a2bc1046d613817db763ef997940d78858"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/dnd-move": {
+    "symlink": "grabbing"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/dnd-none": {
+    "symlink": "grabbing"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/dnd_no_drop": {
+    "sha256": "b9b62d353b9e3bbbbe184f2e91e406eaf21e56844acd3b6849fb94c521d5e154"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/dot_box_mask": {
+    "symlink": "dotbox"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/dotbox": {
+    "sha256": "ee5a17cd4f1377214bc094826d5a27504df13f63efcf604e02a8950edca65a5c"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/double_arrow": {
+    "symlink": "sb_v_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/down-arrow": {
+    "symlink": "sb_down_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/draft": {
+    "symlink": "pencil"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/draft_large": {
+    "symlink": "right_ptr"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/draft_small": {
+    "symlink": "right_ptr"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/draped_box": {
+    "symlink": "dotbox"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/e-resize": {
+    "symlink": "right_side"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/e29285e634086352946a0e7090d73106": {
+    "symlink": "hand2"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/ew-resize": {
+    "symlink": "sb_h_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/fcf1c3c7cd4491d801f1e1c78f100000": {
+    "symlink": "fd_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/fcf21c00b30f7e3f83fe0dfd12e71cff": {
+    "symlink": "grabbing"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/fd_double_arrow": {
+    "sha256": "b53ad9c995e6fa6f9b10a705d1ff69e5b1c4098545914e1a6cda15797984f646"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/fleur": {
+    "symlink": "move"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/forbidden": {
+    "symlink": "circle"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/grab": {
+    "symlink": "hand1"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/grabbing": {
+    "sha256": "7cb146937c8b0600a8cbf92b683cbd6091b7231ddde392fdc12ad9a373dd23e6"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/h_double_arrow": {
+    "symlink": "sb_h_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/hand1": {
+    "sha256": "ec26227a4ec3c38f81b91b191c2c5779e2a2b68873ce2d087cb93f286212ef71"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/hand2": {
+    "sha256": "6b1fc64af28d3942710da64db8ac351bcef44324b8c055f3e1d01acc7aba5e06"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/help": {
+    "symlink": "question_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/ibeam": {
+    "symlink": "xterm"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/icon": {
+    "symlink": "dotbox"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/left-arrow": {
+    "symlink": "sb_left_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/left_ptr": {
+    "sha256": "7952439557bc83e80ff5165d755b3e361a6c1b6863d4609282e3fb18247fe762"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/left_ptr_help": {
+    "symlink": "question_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/left_ptr_watch": {
+    "sha256": "ade7ec7a97573f06708f9539c41162194f4365b6517f34850ce260adca5d8bf6"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/left_side": {
+    "sha256": "bd034794bd6952df269e5dd5485052087bcd42fa33cfe6099004ca38a4aa8e8b"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/left_tee": {
+    "sha256": "b7b45ed41294c812ecd952ea5a0f55ad85fe136ff45776eff8531057ffb7ca33"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/link": {
+    "sha256": "74fa888249c683a641721d7b8fff0fca7018fb61585c3b0384602d096176746d"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/ll_angle": {
+    "sha256": "7a401145e639edbe9f4ecf564127aacfb0531ffce5f30a0831fbcd816e10eb98"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/lr_angle": {
+    "sha256": "f19e09f4d556b10f60564de65bdc33295b493d3a2dc4402ac18fc3c9fa9fdbdc"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/move": {
+    "sha256": "282c5ddd03d99d93c4b1a4a998ed428c27448d3bd4a17673be26b4c26fb910fd"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/n-resize": {
+    "symlink": "top_side"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/ne-resize": {
+    "symlink": "top_right_corner"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/nesw-resize": {
+    "symlink": "fd_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/no-drop": {
+    "symlink": "dnd_no_drop"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/not-allowed": {
+    "symlink": "crossed_circle"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/ns-resize": {
+    "symlink": "sb_v_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/nw-resize": {
+    "symlink": "top_left_corner"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/nwse-resize": {
+    "symlink": "bd_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/openhand": {
+    "symlink": "hand1"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/pencil": {
+    "sha256": "66f7b47ab563cf7ce6ca5cc9339f186a9075e56731268ce1aad8cd4a61a1a02b"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/pirate": {
+    "symlink": "X_cursor"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/plus": {
+    "sha256": "798e3d53400fc72ea40dfeab065fc2cf6c6f59b8a04956d9237253637850fa29"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/pointer": {
+    "symlink": "hand2"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/pointer-move": {
+    "sha256": "33ca345c98807ceeffa1a589a1384167ec735997635de4468fc49f3339385253"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/pointing_hand": {
+    "symlink": "hand2"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/progress": {
+    "symlink": "left_ptr_watch"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/question_arrow": {
+    "sha256": "7b348329e66f5d962069386e25d77adceb53eea0a7387fabf20d9df70820910c"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/right-arrow": {
+    "symlink": "sb_right_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/right_ptr": {
+    "sha256": "081b648fe8e810fe93d332df3c3e992a5f19ed3e8882b1a6dd907e6db794c240"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/right_side": {
+    "sha256": "8b9a6bd2b2cf6916e961335fb625274241c2cb34b2ed4cb26efafb10f79570b4"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/right_tee": {
+    "sha256": "0d915e4f73c3b3102893f26c3d7dfbc9f145614412deddcd56914f97f00482ff"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/row-resize": {
+    "symlink": "sb_v_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/s-resize": {
+    "symlink": "bottom_side"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/sb_down_arrow": {
+    "sha256": "6ff7bc156b57edde97d5899e757a94c41daa92ad2d0107382ef548a299912cd3"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/sb_h_double_arrow": {
+    "sha256": "fc6782ad95ac2290550837d73da368aad2c88916abb595b264167a63df2459c1"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/sb_left_arrow": {
+    "sha256": "c9cc0052e9fba13772c0675c77af223c9709f1fb21b838b43f55ef40b0e33681"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/sb_right_arrow": {
+    "sha256": "586effe013f4b90e8f4401b0cb9742607b233249b486d136aebd8fb6352dbebf"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/sb_up_arrow": {
+    "sha256": "711c8c06653b8470d58c1197bb67172a0080dc0aa2a7727809a785226e319fe9"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/sb_v_double_arrow": {
+    "sha256": "22f2c7ac51cc182146fb29148fc68933f644426b496002b994d3927ac3106c99"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/se-resize": {
+    "symlink": "bottom_right_corner"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/size-hor": {
+    "symlink": "sb_h_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/size-ver": {
+    "symlink": "sb_v_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/size_all": {
+    "symlink": "move"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/size_bdiag": {
+    "symlink": "fd_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/size_fdiag": {
+    "symlink": "bd_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/size_hor": {
+    "symlink": "sb_h_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/size_ver": {
+    "symlink": "sb_v_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/split_h": {
+    "symlink": "sb_h_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/split_v": {
+    "symlink": "sb_v_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/sw-resize": {
+    "symlink": "bottom_left_corner"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/target": {
+    "symlink": "dotbox"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/tcross": {
+    "sha256": "46f01d3ff17cc535764e357599379f497b5276a8d7992a7dacd75f7f36c0a396"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/text": {
+    "symlink": "xterm"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/top_left_arrow": {
+    "symlink": "left_ptr"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/top_left_corner": {
+    "sha256": "35011ef4c882ecc2edf91364fd46371098196b2476d95f36d5791a401f75f19e"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/top_right_corner": {
+    "sha256": "8307696dd6a76a3fbbbbc540ab0faa2dd983331f8669867328cd284ecfdfa2cf"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/top_side": {
+    "sha256": "642fd39c419df5b244c53d1d345cea47174924b0b9370da4894c43c7ef972bdc"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/top_tee": {
+    "sha256": "7cc9309378e0ed5011bb8d599c309964f0aeec6a3818abe1f5d7573b6724f7ff"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/ul_angle": {
+    "sha256": "adcdfd0553b82c995a3e6ca3b50480dc5fb8afb343deaa97bf38936c485dd30d"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/up-arrow": {
+    "symlink": "sb_up_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/ur_angle": {
+    "sha256": "129623b1ba55357a26a79ca934e3f4f71e5cb86469b3931506fc03f640ee8928"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/v_double_arrow": {
+    "symlink": "sb_v_double_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/vertical-text": {
+    "sha256": "0dd700540d980de11a3d327e967d3db2e52b1a08e0c99fff68a6bd45aea9aced"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/w-resize": {
+    "symlink": "left_side"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/wait": {
+    "sha256": "5723099e648798c611b68fb762bfea01e244bf10391ebb25a1dbc6f152dcbf8f"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/watch": {
+    "symlink": "wait"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/wayland-cursor": {
+    "sha256": "6a80a7d2efa0fbd8adb50034de45f98d0d78377987ba58d04fd85d5d2e42ccf9"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/whats_this": {
+    "symlink": "question_arrow"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/x-cursor": {
+    "symlink": "X_cursor"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/xterm": {
+    "sha256": "f18051559fd63a7c560965a46767c3958a1e1f69810027cebef896b3dcc0f9b5"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/zoom-in": {
+    "sha256": "555ccd7d5c71827fd71a91d9a6e6fc6dc96958ebb9d69bed5ce29051be4dbe0a"
+  },
+  "assets/cursors/Bibata-Modern-Koru/cursors/zoom-out": {
+    "sha256": "133a0302ed54d0c8c43a553029514a01d2767ff5e239fd3a031ef4b5111e0dd0"
+  },
+  "assets/cursors/Bibata-Modern-Koru/index.theme": {
+    "sha256": "c19752958f1f34d3ce1dbe6550602007e133d3b10f5a855e3ca20f63c3efef7e"
+  }
+}

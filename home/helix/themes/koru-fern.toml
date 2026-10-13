@@ -1,0 +1,166 @@
+# Koru Fern — native Helix 25.07.1 theme.
+# Palette: WallyHao/koru-nixos-dotfiles system/theme.nix.
+# Syntax semantics: home/neovim.nix; editor behavior stays user-owned.
+# Search selections use ui.selection; picker matches use ui.text.focus.
+# No ANSI dependencies or inherited themes.
+
+"attribute" = { fg = "accent-yellow" }
+"constant" = { fg = "accent-yellow" }
+"constant.numeric" = { fg = "accent-yellow" }
+"constant.builtin" = { fg = "accent-yellow" }
+"constant.character.escape" = { fg = "accent-yellow" }
+"function.macro" = { fg = "accent-yellow" }
+"function.special" = { fg = "accent-yellow" }
+"keyword.directive" = { fg = "accent-yellow" }
+"special" = { fg = "accent-yellow" }
+"constructor" = { fg = "accent" }
+"function" = { fg = "accent" }
+"function.builtin" = { fg = "accent" }
+"function.method" = { fg = "accent" }
+"keyword" = { fg = "accent" }
+"keyword.control" = { fg = "accent" }
+"keyword.control.import" = { fg = "accent" }
+"keyword.control.return" = { fg = "accent" }
+"keyword.function" = { fg = "accent" }
+"keyword.operator" = { fg = "accent" }
+"keyword.storage" = { fg = "accent" }
+"label" = { fg = "accent" }
+"namespace" = { fg = "accent" }
+"operator" = { fg = "accent" }
+"tag" = { fg = "accent" }
+"type" = { fg = "accent" }
+"type.builtin" = { fg = "accent" }
+"type.enum.variant" = { fg = "accent" }
+"constant.character" = { fg = "fg" }
+"string" = { fg = "fg" }
+"string.special" = { fg = "fg" }
+"variable" = { fg = "fg" }
+"variable.builtin" = { fg = "fg" }
+"variable.other.member" = { fg = "fg" }
+"variable.parameter" = { fg = "fg" }
+"string.regexp" = { fg = "accent-yellow" }
+"comment" = { fg = "muted-alt", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "muted", modifiers = ["italic"] }
+"comment.line.documentation" = { fg = "muted", modifiers = ["italic"] }
+"punctuation" = { fg = "muted-alt" }
+"punctuation.special" = { fg = "accent-yellow" }
+"markup.heading" = { fg = "accent-yellow", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "accent" }
+"markup.heading.completion" = { fg = "accent-yellow", bg = "bg-alt", modifiers = ["bold"] }
+"markup.heading.hover" = { fg = "accent-yellow", bg = "bg-alt", modifiers = ["bold"] }
+"markup.normal.completion" = { fg = "fg", bg = "bg-alt" }
+"markup.normal.hover" = { fg = "fg", bg = "bg-alt" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "accent-yellow", underline = { style = "line" } }
+"markup.link.label" = { fg = "accent" }
+"markup.link.text" = { fg = "accent-yellow" }
+"markup.link.url" = { fg = "accent-yellow", underline = { style = "line" } }
+"markup.list" = { fg = "accent-yellow" }
+"markup.list.checked" = { fg = "accent" }
+"markup.list.unchecked" = { fg = "muted" }
+"markup.quote" = { fg = "muted" }
+"markup.raw" = { fg = "fg" }
+"markup.raw.inline" = { fg = "fg", bg = "bg-alt" }
+"diff.plus" = { fg = "accent" }
+"diff.minus" = { fg = "ansi-red" }
+"diff.delta" = { fg = "accent-yellow" }
+"diff.delta.moved" = { fg = "accent-yellow" }
+"diff.delta.conflict" = { fg = "urgent", modifiers = ["bold"] }
+"error" = { fg = "ansi-red" }
+"warning" = { fg = "accent-yellow" }
+"info" = { fg = "fg" }
+"hint" = { fg = "muted-alt" }
+"diagnostic" = { underline = { style = "curl", color = "muted" } }
+"diagnostic.error" = { underline = { style = "curl", color = "ansi-red" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "accent-yellow" } }
+"diagnostic.info" = { underline = { style = "curl", color = "fg" } }
+"diagnostic.hint" = { underline = { style = "curl", color = "muted-alt" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+"ui.background" = { fg = "fg", bg = "bg" }
+"ui.background.separator" = { fg = "border" }
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "cursor", bg = "accent-bg", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "muted-alt" }
+"ui.text.info" = { fg = "fg", bg = "bg-alt" }
+"ui.text.directory" = { fg = "accent" }
+"ui.cursor" = { fg = "bg", bg = "cursor" }
+"ui.cursor.primary" = { fg = "bg", bg = "cursor" }
+"ui.cursor.match" = { fg = "accent-yellow", modifiers = ["bold"], underline = { style = "line" } }
+"ui.cursorline.primary" = { bg = "bg-alt" }
+"ui.cursorline.secondary" = { bg = "bg-alt" }
+"ui.cursorcolumn.primary" = { bg = "bg-alt" }
+"ui.cursorcolumn.secondary" = { bg = "bg-alt" }
+"ui.gutter" = { bg = "bg" }
+"ui.gutter.selected" = { bg = "bg-alt" }
+"ui.linenr" = { fg = "muted-alt" }
+"ui.linenr.selected" = { fg = "accent-yellow", modifiers = ["bold"] }
+"ui.selection" = { bg = "accent-bg" }
+"ui.selection.primary" = { bg = "accent-bg" }
+"ui.highlight" = { fg = "black", bg = "accent-yellow" }
+"ui.highlight.frameline" = { fg = "black", bg = "accent" }
+"ui.statusline" = { fg = "fg", bg = "bg-alt" }
+"ui.statusline.inactive" = { fg = "muted-alt", bg = "bg-alt" }
+"ui.statusline.normal" = { fg = "black", bg = "accent", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "black", bg = "accent-yellow", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "black", bg = "ansi-cyan", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "border" }
+"ui.bufferline" = { fg = "muted", bg = "bg-alt" }
+"ui.bufferline.active" = { fg = "black", bg = "accent-yellow", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg" }
+"ui.popup" = { fg = "fg", bg = "bg-alt" }
+"ui.popup.info" = { fg = "fg", bg = "bg-alt" }
+"ui.help" = { fg = "fg", bg = "bg-alt" }
+"ui.menu" = { fg = "fg", bg = "bg-alt" }
+"ui.menu.selected" = { fg = "black", bg = "accent-yellow", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "accent", bg = "border" }
+"ui.window" = { fg = "border" }
+"ui.picker.header" = { fg = "muted", bg = "bg-alt" }
+"ui.picker.header.column" = { fg = "muted", modifiers = ["bold"] }
+"ui.picker.header.column.active" = { fg = "accent-yellow", modifiers = ["bold"] }
+"ui.virtual.ruler" = { bg = "bg-alt" }
+"ui.virtual.whitespace" = { fg = "border" }
+"ui.virtual.indent-guide" = { fg = "border" }
+"ui.virtual.inlay-hint" = { fg = "muted", bg = "bg-alt" }
+"ui.virtual.inlay-hint.parameter" = { fg = "muted", bg = "bg-alt" }
+"ui.virtual.inlay-hint.type" = { fg = "muted", bg = "bg-alt" }
+"ui.virtual.wrap" = { fg = "muted-alt" }
+"ui.virtual.jump-label" = { fg = "accent-yellow-bright", modifiers = ["bold"] }
+"ui.debug.breakpoint" = { fg = "ansi-red" }
+"ui.debug.active" = { fg = "accent-yellow" }
+
+[palette]
+bg = "#171E1A"
+bg-alt = "#222D26"
+fg = "#D2DCD0"
+fg-bright = "#E1E8DB"
+muted = "#A5B3A2"
+muted-alt = "#788A78"
+accent = "#8FBF88"
+accent-yellow = "#E6D87A"
+accent-yellow-bright = "#F5E9A6"
+accent-deep = "#527B59"
+accent-bright = "#B4D6A2"
+accent-bg = "#334936"
+cursor = "#DEE7D5"
+border = "#425347"
+urgent = "#D39B79"
+black = "#121813"
+ansi-black = "#222D26"
+ansi-red = "#CC8F88"
+ansi-green = "#8FBF88"
+ansi-yellow = "#E6D87A"
+ansi-blue = "#8EAAB8"
+ansi-magenta = "#B39BB5"
+ansi-cyan = "#88B8AB"
+ansi-white = "#D2DCD0"
+bright-black = "#526457"
+bright-red = "#DDA39A"
+bright-green = "#B4D6A2"
+bright-yellow = "#F5E9A6"
+bright-blue = "#ACC3CE"
+bright-magenta = "#CAB5CA"
+bright-cyan = "#A6D0C2"
+bright-white = "#E1E8DB"

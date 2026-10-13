@@ -1,0 +1,35 @@
+# Koru Fern
+# Exact colors from system/theme.nix and home/kitty.nix.
+# Colors only; font, cursor behavior and window settings stay in alacritty.toml.
+
+[colors.primary]
+background = "#171E1A"
+foreground = "#D2DCD0"
+
+[colors.cursor]
+cursor = "#8FBF88"
+text = "#171E1A"
+
+[colors.selection]
+background = "#334936"
+text = "#DEE7D5"
+
+[colors.normal]
+black = "#222D26"
+red = "#CC8F88"
+green = "#8FBF88"
+yellow = "#E6D87A"
+blue = "#8EAAB8"
+magenta = "#B39BB5"
+cyan = "#88B8AB"
+white = "#D2DCD0"
+
+[colors.bright]
+black = "#526457"
+red = "#DDA39A"
+green = "#B4D6A2"
+yellow = "#F5E9A6"
+blue = "#ACC3CE"
+magenta = "#CAB5CA"
+cyan = "#A6D0C2"
+white = "#E1E8DB"

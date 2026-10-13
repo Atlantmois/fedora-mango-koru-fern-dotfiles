@@ -1,0 +1,72 @@
+# Koru Fern 原生主题；切回独立 Kanso：theme = "kanso-ink-obsidian-fixed"。
+# 主题只改变配色；下面的编辑器功能设置保持不变。
+theme = "koru-fern"
+
+[editor]
+trim-trailing-whitespace = true
+# 上一条不是冗余：Helix 的默认值是 false（见 helix-view/src/editor.rs 的
+# impl Default for Config），所以你这条是有效改动。
+
+# ── 相对行号 ─────────────────────────────────────────────────────────
+# 默认 "absolute"。改成 relative 后，配合 vim 式动作可以"数着跳"：
+#   5j / 12G / d3k / y4j
+# 对 Helix 的实际操作体感提升最明显的一项。零开销。
+line-number = "relative"
+
+# ── 模式变色 ─────────────────────────────────────────────────────────
+# 默认 false。开启后**状态栏的模式指示器**按模式换底色（颜色来自主题的
+# ui.statusline.normal/insert/select：normal 蕨绿 / insert 柔黄 / select 青绿），
+# 一眼就知道当前在哪个模式。零开销。
+# 2026-09-26 更正：原注释写的是"光标所在行的背景色随模式变化"——那是 cursorline
+# 的职责（下面那条已停用）；color-modes 只作用于模式指示器。实测：状态栏的
+# NOR 徽章随模式变色，光标所在行没有任何变色。
+color-modes = true
+
+# ── 高亮当前行（保持停用）──────────────────────────────────────────
+# Koru Fern 的 ui.cursorline.primary 使用 bg-alt（#222D26），保持原有停用状态。
+# 如需显示当前行底色，可取消下一行注释。
+# cursorline = true
+
+# ── 第 88 列标尺（保持停用）────────────────────────────────────────
+# Koru Fern 的 ui.virtual.ruler 使用 bg-alt（#222D26）；保持原有停用状态。
+# 如需标尺，可取消下一行注释。
+# rulers = [88]
+
+# 默认 false。强制 24 位真彩色，Ghostty 完全支持，避免配色被降到 256 色。
+true-color = true
+
+# 默认 5。调大后光标靠近上下边缘时保留更多上下文。
+scrolloff = 8
+
+# 默认 "never"。打开后在顶部显示已打开的 buffer（代价：占 1 行高度）。
+bufferline = "multiple"
+
+# 调整补全出现时间
+completion-timeout = 50
+completion-trigger-len = 2
+
+# ── 缩进参考线 ───────────────────────────────────────────────────────
+# 默认 render = false。Python 靠缩进表达结构，这条收益明显。
+[editor.indent-guides]
+render = true
+character = "╎"
+skip-levels = 1
+
+# ── 语言服务器 ───────────────────────────────────────────────────────
+# 当前未启用（Helix 默认 false；下面被注释的那行就是开启方式）。开启后 ty 会把
+# 推断出的类型以行内文字显示在变量旁边。这是全部新增项里唯一有可感开销的一条
+# （要渲染额外文本），但对课程作业这种小文件可以忽略。
+[editor.lsp]
+# display-inlay-hints = true
+
+# 让 Ghostty 的光标轨迹在 Helix 里生效。
+# Helix 对 block 光标是「自己画」的：它会隐藏硬件光标，Ghostty 于是拿不到
+# 光标位置，直接跳过整段光标 uniform 更新，轨迹必然不出现。
+# 用非 block 形状 = 把光标交回终端，轨迹才会工作。
+[editor.cursor-shape]
+normal = "underline"   # 正常模式：下划线仍表示「操作这个字符」，且不遮住字形
+insert = "bar"         # 插入模式：竖线，vim 惯例
+select = "underline"   # 选择模式：同 normal，避免出现 block 导致轨迹断档
+
+[keys.insert]
+"A-ret" = "open_below"

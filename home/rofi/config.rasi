@@ -1,0 +1,11 @@
+/* Launcher behavior is unchanged; visual settings live in the theme. */
+configuration {
+    font: "HarmonyOS Sans bold 18";
+    modi: "drun";
+    show-icons: true;
+    sort: true;
+    sorting-method: "fzf";
+    display-drun: " ";
+}
+
+@theme "koru-fern.rasi"

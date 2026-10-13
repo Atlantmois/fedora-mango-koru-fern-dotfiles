@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="200" viewBox="0 0 840 200">
+<rect width="840" height="200" fill="#171E1A"/>
+<text x="24" y="35" fill="#D2DCD0" font-family="monospace" font-size="20">Koru Fern / WallyHao</text>
+<rect x="24" y="55" width="116" height="76" fill="#171E1A" stroke="#425347"/>
+<text x="24" y="155" fill="#D2DCD0" font-family="monospace" font-size="13">Background</text>
+<text x="24" y="179" fill="#A5B3A2" font-family="monospace" font-size="13">#171E1A</text>
+<rect x="158" y="55" width="116" height="76" fill="#222D26" stroke="#425347"/>
+<text x="158" y="155" fill="#D2DCD0" font-family="monospace" font-size="13">Surface</text>
+<text x="158" y="179" fill="#A5B3A2" font-family="monospace" font-size="13">#222D26</text>
+<rect x="292" y="55" width="116" height="76" fill="#D2DCD0" stroke="#425347"/>
+<text x="292" y="155" fill="#D2DCD0" font-family="monospace" font-size="13">Foreground</text>
+<text x="292" y="179" fill="#A5B3A2" font-family="monospace" font-size="13">#D2DCD0</text>
+<rect x="426" y="55" width="116" height="76" fill="#A5B3A2" stroke="#425347"/>
+<text x="426" y="155" fill="#D2DCD0" font-family="monospace" font-size="13">Muted</text>
+<text x="426" y="179" fill="#A5B3A2" font-family="monospace" font-size="13">#A5B3A2</text>
+<rect x="560" y="55" width="116" height="76" fill="#E6D87A" stroke="#425347"/>
+<text x="560" y="155" fill="#D2DCD0" font-family="monospace" font-size="13">Accent</text>
+<text x="560" y="179" fill="#A5B3A2" font-family="monospace" font-size="13">#E6D87A</text>
+<rect x="694" y="55" width="116" height="76" fill="#8FBF88" stroke="#425347"/>
+<text x="694" y="155" fill="#D2DCD0" font-family="monospace" font-size="13">Fern</text>
+<text x="694" y="179" fill="#A5B3A2" font-family="monospace" font-size="13">#8FBF88</text>
+</svg>

@@ -1,0 +1,36 @@
+[general]
+# 切回原有配色：将唯一导入改为 themes/kanso-ink-obsidian.toml
+# Kanso Ink 原版：themes/kanso-ink.toml；每次只启用一个配色文件。
+import = [
+    "themes/koru-fern.toml",
+]
+
+# 窗口设置
+[window]
+# 初始窗口尺寸（列数, 行数），设为 0 则使用系统推荐值
+dimensions = { columns = 100, lines = 30 }
+# 窗口内边距（像素）
+padding = { x = 10, y = 10 }
+# 动态内边距，使内容更均匀分布
+dynamic_padding = true
+# 窗口装饰："Full", "None", "Transparent", "Buttonless"
+# decorations = "Buttonless"
+# 背景不透明度 (0.0 完全透明 - 1.0 完全不透明)
+opacity = 1.0
+
+# 字体设置
+[font]
+# 字体大小
+size = 13.0
+# 正常字体
+[font.normal]
+family = "Jetbrains Maple Mono" # 确保系统已安装该字体
+style = "Regular"
+# 粗体
+[font.bold]
+family = "Jetbrains Maple Mono"
+style = "Bold"
+# 斜体
+[font.italic]
+family = "Jetbrains Maple Mono"
+style = "Italic"

@@ -1,0 +1,43 @@
+font-family = "Jetbrains Maple Mono"
+font-size = 16
+background-opacity = 1
+background-opacity-cells = true
+
+# 去除顶栏
+window-decoration = none
+gtk-titlebar = false
+
+# ── 配色统一 ─────────────────────────────────────────────────────────
+# 切回原有配色：theme = Kanso Ink Obsidian；原版：theme = Kanso Ink
+theme = Koru Fern
+
+# ── 内边距 ───────────────────────────────────────────────────────────
+# Ghostty 默认只有 2，文字几乎贴着窗口边。配合 paneru 的 8pt 窗口间隙用。
+# window-padding-x = 10
+# window-padding-y = 8
+
+# ── 对比度兜底（当前未启用）──────────────────────────────────────────
+# 默认 minimum-contrast = 1（不设下限）。
+# 2026-09-26 更正：原注释写的是「0.85 透明 + blur + Helix 透明主题，三层半透明」，
+# 但 opacity/blur 一直是注释状态、Helix 也已改回不透明内置主题，前提不成立。
+# 而且 1.1 对本配色是空操作：TokyoNight Moon 里当文字用的色最低已是 ANSI 8 的
+# 1.8:1（#444a73 on #222436），全部高于 1.1。官方文档：1.1 只够保证"文字不与
+# 背景同色"，要避免"难读"需要 ≥ 3。真要抬亮最暗那档文字，直接改调色板更有效：
+#   palette = 8=#828bb8      # 抬完 ANSI 8 变 4.61:1，fish 自动补全等一并受益
+# minimum-contrast = 1.1
+
+# ── 交互细节（零开销）────────────────────────────────────────────────
+# 打字时隐藏鼠标指针，不挡字
+mouse-hide-while-typing = true
+# 光标改成竖线、关掉闪烁。关闪烁顺带少一次周期性重绘。
+# （Helix 会用自己的光标形状覆盖，这里影响的是 fish 提示符等场景）
+cursor-style = bar
+cursor-style-blink = false
+
+
+# ── Neovide 风格光标轨迹（自定义着色器）──────────────────────────────
+# 相对路径以本配置文件所在目录为基准；调参见 shaders/cursor_warp.glsl 顶部
+custom-shader = shaders/cursor_warp.glsl
+# true = 仅在窗口聚焦时跑动画循环（省 CPU）。若残影会“卡住”不消失，改成 always
+# ⚠️ 不要改成 always —— 那会让着色器在失焦时也持续跑动画循环。
+custom-shader-animation = true

@@ -1,0 +1,14 @@
+/* Koru Fern: WallyHao/koru-nixos-dotfiles, system/theme.nix.
+ * Only the eight requested semantic colors are used by this Rofi theme.
+ * All colors are fully opaque. Keep layout out of this file.
+ */
+* {
+    bg:            #171E1A;
+    bg-alt:        #222D26;
+    fg:            #D2DCD0;
+    muted:         #A5B3A2;
+    accent:        #8FBF88;
+    accent-yellow: #E6D87A;
+    accent-bg:     #334936;
+    border-color:  #425347;
+}

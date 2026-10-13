@@ -1,0 +1,47 @@
+{
+  "name": "Koru Fern",
+  "source": {
+    "author": "WallyHao",
+    "repository": "https://github.com/WallyHao/koru-nixos-dotfiles",
+    "commit": "b276a4a61197b7831fbbe2e44af418a3b19ae768",
+    "path": "system/theme.nix"
+  },
+  "semantic": {
+    "bg": "#171E1A",
+    "bg-alt": "#222D26",
+    "fg": "#D2DCD0",
+    "fg-bright": "#E1E8DB",
+    "muted": "#A5B3A2",
+    "muted-alt": "#788A78",
+    "accent": "#8FBF88",
+    "accent-yellow": "#E6D87A",
+    "accent-yellow-bright": "#F5E9A6",
+    "accent-deep": "#527B59",
+    "accent-bright": "#B4D6A2",
+    "accent-bg": "#334936",
+    "cursor": "#DEE7D5",
+    "border": "#425347",
+    "urgent": "#D39B79",
+    "black": "#121813"
+  },
+  "ansi": {
+    "black": "#222D26",
+    "red": "#CC8F88",
+    "green": "#8FBF88",
+    "yellow": "#E6D87A",
+    "blue": "#8EAAB8",
+    "magenta": "#B39BB5",
+    "cyan": "#88B8AB",
+    "white": "#D2DCD0"
+  },
+  "ansi-bright": {
+    "black": "#526457",
+    "red": "#DDA39A",
+    "green": "#B4D6A2",
+    "yellow": "#F5E9A6",
+    "blue": "#ACC3CE",
+    "magenta": "#CAB5CA",
+    "cyan": "#A6D0C2",
+    "white": "#E1E8DB"
+  }
+}

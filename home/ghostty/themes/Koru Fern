@@ -1,0 +1,25 @@
+# Koru Fern — exact colors from WallyHao/koru-nixos-dotfiles.
+# system/theme.nix + home/kitty.nix; colors only.
+background = #171E1A
+foreground = #D2DCD0
+cursor-color = #8FBF88
+cursor-text = #171E1A
+selection-background = #334936
+selection-foreground = #DEE7D5
+
+palette = 0=#222D26
+palette = 1=#CC8F88
+palette = 2=#8FBF88
+palette = 3=#E6D87A
+palette = 4=#8EAAB8
+palette = 5=#B39BB5
+palette = 6=#88B8AB
+palette = 7=#D2DCD0
+palette = 8=#526457
+palette = 9=#DDA39A
+palette = 10=#B4D6A2
+palette = 11=#F5E9A6
+palette = 12=#ACC3CE
+palette = 13=#CAB5CA
+palette = 14=#A6D0C2
+palette = 15=#E1E8DB

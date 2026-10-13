@@ -1,0 +1,46 @@
+# ============================================================
+# Python
+# ============================================================
+
+[[language]]
+name = "python"
+
+# ty:
+#   - completion
+#   - hover
+#   - signature help
+#   - definition / references
+#   - rename
+#   - type diagnostics
+#   - auto import
+#
+# Ruff:
+#   - lint diagnostics
+#   - code actions / quick fixes
+#   - formatting
+#
+# 不让 Ruff 参与 completion，避免两个 LSP 的补全结果被合并。
+language-servers = [
+  "ty",
+  { name = "ruff", only-features = ["diagnostics", "code-action", "format"] }
+]
+
+auto-format = false
+
+
+# ============================================================
+# ty
+# ============================================================
+
+[language-server.ty]
+command = "ty"
+args = ["server"]
+
+
+# ============================================================
+# Ruff
+# ============================================================
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
